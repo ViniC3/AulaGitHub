@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+    margin-top: -25px;
+    font-family: 'Questrial', sans-serif;
+  font-size: 18px;
+  line-height: 1.5em;
+}
+
+/* Controle de Lado do Menu */
+
+.fa-bars {
+  margin-right: 10px;
+}
+
+/* Controle de Layout do Menu */
+
+.navigation-menu {
+  background: #111;
+  height: 100%;
+  width: 50%;
+  padding: 60px 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  position: fixed;
+  right: -45%;
+  top: 0;
+  transition: all 0.5s;
+  z-index: 1;
+  font-size: 60px;
+}
+
+/* Tamanho do Blocos do Menu */
+
+.navigation-menu li {
+  padding: 30px 0;
+}
+
+/* Cor dos Blocos 2 */
+
+.navigation-menu li:nth-of-type(2n) {
+  background: #222;
+}
+
+/* Cor dos Blocos */
+
+.navigation-menu li:hover {
+  background: #444;
+}
+
+/* Controle de Texto */
+
+.navigation-menu a {
+  color: #E5E5E5;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+  transition:all 0.3s;
+  font-size: 25px;
+}
+
+/* Controle da Barra Onde fica o Menu */
+
+.navbar {
+  background: #E5E5E5;
+  padding: 20px;
+  position: fixed;
+  width: 95%;
+  top: 0;
+}
+
+
+
+/* Esconde o Check Box */
+#toggle {
+  display: none; 
+}
+
+/* Use label pra alterna o slide do menu  */
+label[for="toggle"] {
+  cursor: pointer;
+  font-size: 25px;
+  margin-left: 40px;
+}
+
+/* Sem isso aqui o Menu Não Abre */
+
+input#toggle:checked + ul.navigation-menu {
+  right: 0;
+}
+
+/* 
+Também o conteúdo do slide quando a caixa de seleção está marcada */
+input#toggle:checked ~ .content {
+  left: -45%;
+}
+
+
+
+p,h4, h5 {
+    margin: 25px;
+     text-align: justify
+}
+
+p {
+  font-size: 18px;
+}
+
+li#vai {
+  margin: 25px;
+}
+
